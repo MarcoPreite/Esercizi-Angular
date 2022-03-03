@@ -1,0 +1,19 @@
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col" *ngFor="let user of users">
+        <esang-card>
+            <ng-container data-header>
+                <h5 class="card-code">
+                    <span class="badge bg-secondary  rounded-pill">{{ user.code }}</span>
+                </h5>
+            </ng-container>
+
+            <ng-container data-body>
+              <p class="card-fullname">
+                {{ user.name }}
+                {{ user.surname }}
+              </p>
+              <!-- <button class="btn btn-primary btn-sm" (click)="select(project)">Vai al Progetto</button> -->
+            </ng-container>
+          </esang-card>
+        </div>
+      </div>

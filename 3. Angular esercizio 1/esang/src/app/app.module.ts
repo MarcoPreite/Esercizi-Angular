@@ -3,10 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { CardComponent } from './shared/card/card.component';
+import { UserListComponent } from './user/user-list/user-list.component';
+import { UserContainerComponent } from './user/user-container/user-container.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardComponent,
+    UserListComponent,
+    UserContainerComponent,
   ],
   imports: [
     BrowserModule,
