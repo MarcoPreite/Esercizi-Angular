@@ -7,6 +7,8 @@ import { User } from '@app/Models/User';
   styleUrls: ['./user-container.component.css']
 })
 export class UserContainerComponent implements OnInit {
+  selectedUser!: User;
+
   users: User [] = [
       {
         id: 1,
@@ -14,7 +16,6 @@ export class UserContainerComponent implements OnInit {
         name: 'Mario',
         surname: 'Rossi',
         location: 'Roma',
-        tasks: []
       },
       {
         id: 2,
@@ -22,7 +23,6 @@ export class UserContainerComponent implements OnInit {
         name: 'Roberta',
         surname: 'Grigi',
         location: 'Lecce',
-        tasks: []
       },
       {
         id: 3,
@@ -30,13 +30,16 @@ export class UserContainerComponent implements OnInit {
         name: 'Francesco',
         surname: 'Verdi',
         location: 'Palermo',
-        tasks: []
       },
   ]
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectUser(user: User) {
+    this.selectedUser = user
   }
 
 }

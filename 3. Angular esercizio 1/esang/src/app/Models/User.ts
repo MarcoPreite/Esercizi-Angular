@@ -1,5 +1,3 @@
-import { Task } from "./Task"
-
 export interface User {
     id: number,
     code: string,
@@ -7,6 +5,4 @@ export interface User {
     surname: string,
     age?: number,
     email?: string,
-    location: string,
-    tasks: Task []
-}
+    location: string,}

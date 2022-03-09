@@ -1,0 +1,12 @@
+.container-list {
+    background-color: greenyellow;
+    padding-top: 10px;
+    height: 100vh;
+    margin-left: 10px;
+
+}
+
+button {
+    padding: 5px 50px;
+    margin-left: 20px;
+}

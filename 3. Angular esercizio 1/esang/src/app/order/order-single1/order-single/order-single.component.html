@@ -1,0 +1,14 @@
+<div class="card mb-3" style="max-width: 18rem;">
+  <div class="col" *ngFor="let order of order1">
+    <ng-container data-header>
+      <h3 class="card-code">
+        {{ order.name }} {{ order.surname }}
+      </h3>
+    </ng-container>
+    
+    <ng-container data-body>
+      <p> {{ order.description }} </p>
+      <p> {{ order.location }} </p>
+    </ng-container>
+  </div>
+</div>

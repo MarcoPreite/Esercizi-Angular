@@ -1,1 +1,6 @@
-<esang-user-list [users]="users"></esang-user-list>
+<div class="container">
+    <div class="row row-cols-2">
+    <esang-user-list [users]="users" (selected)="selectUser($event)"></esang-user-list>
+    <esang-user-detail [user]="selectedUser"></esang-user-detail>
+</div>
+</div>
